@@ -115,7 +115,7 @@ if page == "Home":
         tools, chatbots, and social media monitoring at scale.
 
         ### About this project
-        - **Dataset:** Amazon Product Reviews (Alexa devices) — real customer reviews
+        - **Dataset:** Amazon Product Reviews — real customer reviews
           with a verified review text and a feedback label (1 = positive, 0 = negative).
         - **Pipeline:** raw text → cleaning (lowercasing, removing noise/stopwords) →
           TF-IDF vectorization → classification model.
