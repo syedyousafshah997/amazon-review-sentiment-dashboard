@@ -31,7 +31,7 @@ This project covers the full pipeline of a text classification task:
 
 ## 🗂️ Dataset
 
-- **Source:** Amazon product reviews (Alexa-family devices)
+- **Source:** Amazon product reviews
 - **Size:** ~3,150 reviews
 - **Columns:**
   | Column | Description |
@@ -99,11 +99,10 @@ Each model was evaluated using accuracy, precision, recall, and F1-score, along 
 |---|---|---|---|---|
 | **Linear SVM** | 0.944 | 0.973 | 0.966 | **0.970** |
 | Logistic Regression | 0.933 | 0.987 | 0.940 | 0.963 |
-| Multinomial Naive Bayes | 0.925 | 0.925 | 1.000 | 0.961 |
 
-**Linear SVM** was selected as the final model (highest F1-score) and saved along with its fitted TF-IDF vectorizer for use in the dashboard.
 
-> **Note:** `LinearSVC` does not natively output probabilities. The app derives a confidence score from its decision function using a sigmoid transform when `predict_proba` is unavailable.
+**Linear SVM** was selected as the final model (higher F1-score) and saved along with its fitted TF-IDF vectorizer for use in the dashboard.
+
 
 ---
 
@@ -154,44 +153,6 @@ The Streamlit app has three pages, accessible from the sidebar:
 └── README.md
 ```
 
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/<your-username>/amazon-review-sentiment-dashboard.git
-cd amazon-review-sentiment-dashboard
-```
-
-### 2. Create and activate a virtual environment
-```bash
-python -m venv venv
-
-# Windows
-venv\Scripts\activate
-
-# Mac/Linux
-source venv/bin/activate
-```
-
-### 3. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 4. (Optional) Re-run the notebook to regenerate the model
-```bash
-jupyter nbconvert --to notebook --execute --inplace nlp.ipynb
-```
-
-### 5. Launch the dashboard
-```bash
-streamlit run app.py
-```
-Then open the local URL shown in the terminal (typically `http://localhost:8501`).
-
----
 
 ## ⚠️ Known Limitations
 
@@ -200,6 +161,3 @@ Then open the local URL shown in the terminal (typically `http://localhost:8501`
 
 ---
 
-## 📄 License
-
-This project is open-sourced for educational and portfolio purposes.
