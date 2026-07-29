@@ -79,7 +79,6 @@ Cleaned text is converted into numerical features using **TF-IDF (Term Frequency
 Three classification models were trained on an 80/20 stratified train/test split:
 
 - Logistic Regression (`class_weight='balanced'`)
-- Multinomial Naive Bayes
 - Linear Support Vector Machine (`class_weight='balanced'`)
 
 ### 5. Evaluation
