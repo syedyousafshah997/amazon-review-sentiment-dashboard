@@ -107,6 +107,8 @@ Each model was evaluated using accuracy, precision, recall, and F1-score, along 
 
 ## 🖥️ Dashboard
 The Streamlit app has three pages, accessible from the sidebar:
+
+🔗 **Live App:** (https://amazon-review-sentiment-dashboard-7xvob5ats3mivfavqkbb7v.streamlit.app/)
 | Page | Description |
 |---|---|
 | **Home** | Project introduction and overview |
