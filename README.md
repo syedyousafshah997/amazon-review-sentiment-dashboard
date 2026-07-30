@@ -32,6 +32,7 @@ This project covers the full pipeline of a text classification task:
 ## 🗂️ Dataset
 
 - **Source:** Amazon product reviews
+- **Link:** https://www.kaggle.com/datasets/dhruvlotia/amazon-review-sentiment-analysis
 - **Size:** ~3,150 reviews
 - **Columns:**
   | Column | Description |
