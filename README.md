@@ -106,14 +106,27 @@ Each model was evaluated using accuracy, precision, recall, and F1-score, along 
 ---
 
 ## 🖥️ Dashboard
-
 The Streamlit app has three pages, accessible from the sidebar:
-
 | Page | Description |
 |---|---|
 | **Home** | Project introduction and overview |
 | **Data Overview** | Class distribution chart and word clouds |
 | **Sentiment Predictor** | Enter a review and get an instant sentiment prediction + confidence score |
+
+<p align="center">
+  <img src="images/home.png" width="800" alt="Home page of the dashboard"><br>
+  <em>Home page</em>
+</p>
+
+<p align="center">
+  <img src="images/Data_overview.png" width="800" alt="Data Overview page of the dashboard"><br>
+  <em>Data Overview page — class distribution and word clouds</em>
+</p>
+
+<p align="center">
+  <img src="images/prediction.png" width="800" alt="Sentiment Predictor page of the dashboard"><br>
+  <em>Sentiment Predictor page — live prediction with confidence score</em>
+</p>
 
 ---
 
@@ -146,6 +159,9 @@ The Streamlit app has three pages, accessible from the sidebar:
 │   ├── wordclouds.png
 │   ├── wordcloud_positive.png
 │   ├── wordcloud_negative.png
+│   ├── home.png
+│   ├── prediction.png
+│   ├── Data_overview.png
 │   ├── confusion_matrices.png
 │   └── model_comparison.png
 ├── requirements.txt
